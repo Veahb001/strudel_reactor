@@ -1,0 +1,44 @@
+import { useStrudelEditor } from "../../hooks/useStrudelEditor";
+import StrudelEditor from "./strudelEditor";
+import ControlPanel from "./ControlPanel";
+import RadioControls from "./RadioControls";
+import PianorollCanvas from "./pianorollCanvas";
+import "./styles.css";
+
+export default function StrudelDemo() {
+  const {
+    procText,
+    setProcText,
+    procAndPlay,
+    processOnly,
+    play,
+    stop,
+    rollRef,
+    editorRef,
+  } = useStrudelEditor();
+
+  return (
+    <div>
+      <h2>Strudel Demo</h2>
+      <main className="container-fluid">
+        <div className="row">
+          <StrudelEditor value={procText} onChange={setProcText} />
+          <ControlPanel
+            onProcess={processOnly}
+            onProcAndPlay={procAndPlay}
+            onPlay={play}
+            onStop={stop}
+          />
+        </div>
+        <div className="row">
+          <div className="col-md-8">
+            <div ref={editorRef} id="editor" />
+            <div id="output" />
+          </div>
+          <RadioControls onChange={procAndPlay} />
+        </div>
+        <PianorollCanvas rollRef={rollRef} />
+      </main>
+    </div>
+  );
+}
