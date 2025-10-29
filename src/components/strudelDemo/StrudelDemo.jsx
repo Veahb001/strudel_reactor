@@ -1,10 +1,9 @@
 import { useStrudelEditor } from "../../hooks/useStrudelEditor";
-import StrudelEditor from "./strudelEditor";
+import StrudelEditor from "./StrudelEditor";
 import ControlPanel from "./ControlPanel";
 import RadioControls from "./RadioControls";
-import PianorollCanvas from "./pianorollCanvas";
-import "./styles.css";
-
+import PianorollCanvas from "./PianorollCanvas";
+import './style.css'
 export default function StrudelDemo() {
   const {
     procText,

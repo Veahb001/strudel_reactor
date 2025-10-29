@@ -7,7 +7,7 @@ import { registerSoundfonts } from "@strudel/soundfonts";
 import { transpiler } from "@strudel/transpiler";
 import { stranger_tune } from "../utils/tunes";
 import { processText } from "../utils/strudelProcessor";
-import console_monkey_patch from "../utils/consoleMonkeyPatch";
+import console_monkey_patch from "../utils/console-monkey-patch";
 
 export function useStrudelEditor() {
   const [procText, setProcText] = useState(stranger_tune);
