@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { StrudelMirror } from "@strudel/codemirror";
-import { evalScope } from "@strudel/core";
+import { evalScope, ir } from "@strudel/core";
 import { drawPianoroll } from "@strudel/draw";
 import { initAudioOnFirstClick, getAudioContext, webaudioOutput, registerSynthSounds } from "@strudel/webaudio";
 import { registerSoundfonts } from "@strudel/soundfonts";
@@ -11,9 +11,18 @@ import console_monkey_patch from "../utils/console-monkey-patch";
 
 export function useStrudelEditor() {
   const [procText, setProcText] = useState(stranger_tune);
+  const [volume, setVolume] = useState(-6);
+  const [reverb, setReverb] = useState(0.3);
+  const [filterCutoff, setFilterCutoff] = useState(20000);
   const editorRef = useRef(null);
   const rollRef = useRef(null);
   const editorInstance = useRef(null);
+
+  const effectsRef = useRef({
+  gain: null,
+  reverb: null,
+  filter: null,
+  });
 
   useEffect(() => {
     console_monkey_patch();
@@ -45,8 +54,50 @@ export function useStrudelEditor() {
       },
     });
 
+
+
     editorInstance.current.setCode(procText);
   }, []);
+
+  useEffect(() => {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+
+    //Gain node for volume control
+    const gainNode = ctx.createGain();
+    gainNode.gain.value = Math.pow(10, volume / 20); //convert dB to linear
+  
+    //Reverb node
+    const convolver = ctx.createConvolver();
+    const irBuffer = ctx.createBuffer(2, ctx.sampleRate * 2, ctx.sampleRate);
+    for (let ch = 0; ch < 2; ch++) {
+      const channelData = irBuffer.getChannelData(ch);
+      for (let i = 0; i < data.length; i++) data[i] = (Math.random() * 2 - 1);
+    }
+    convolver.buffer = irBuffer;
+
+    //Filter node
+    const filterNode = ctx.createBiquadFilter();
+    filterNode.type = "lowpass";
+    filterNode.frequency.value = filterCutoff;
+
+    // Connect nodes: Source -> Filter -> Reverb -> Gain -> Destination
+    webaudioOutput.node.disconnect();
+    webaudioOutput.node.connect(filterNode);
+    filterNode.connect(convolver);
+    convolver.connect(gainNode);
+    gainNode.connect(ctx.destination);
+
+    //Save references
+    effectsRef.current = { gain: gainNode, reverb: convolver, filter:filterNode };
+
+    return () => {
+      gainNode.disconnect();
+      convolver.disconnect();
+      filterNode.disconnect();
+    };
+  }, []
+  
 
   const processOnly = () => {
     const newCode = processText(procText);

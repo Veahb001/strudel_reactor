@@ -14,6 +14,11 @@ export default function StrudelDemo() {
     stop,
     rollRef,
     editorRef,
+    volume,
+    reverb,
+    setReverb,
+    filterCutoff,
+    setFilterCutoff,
   } = useStrudelEditor();
 
   return (
@@ -27,6 +32,11 @@ export default function StrudelDemo() {
             onProcAndPlay={procAndPlay}
             onPlay={play}
             onStop={stop}
+            volume={volume}
+            reverb={reverb}
+            onReverbChange={setReverb}
+            filterCutoff={filterCutoff}
+            onFilterCutoffChange={setFilterCutoff}
           />
         </div>
         <div className="row">
