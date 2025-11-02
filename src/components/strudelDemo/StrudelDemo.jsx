@@ -4,6 +4,7 @@ import ControlPanel from "./ControlPanel";
 import RadioControls from "./RadioControls";
 import PianorollCanvas from "./PianorollCanvas";
 import './style.css'
+
 export default function StrudelDemo() {
   const {
     procText,
@@ -15,6 +16,7 @@ export default function StrudelDemo() {
     rollRef,
     editorRef,
     volume,
+    setVolume,
     reverb,
     setReverb,
     filterCutoff,
@@ -33,6 +35,7 @@ export default function StrudelDemo() {
             onPlay={play}
             onStop={stop}
             volume={volume}
+            onVolumeChange={setVolume}
             reverb={reverb}
             onReverbChange={setReverb}
             filterCutoff={filterCutoff}

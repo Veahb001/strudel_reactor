@@ -14,6 +14,7 @@ export function useStrudelEditor() {
   const [volume, setVolume] = useState(-6);
   const [reverb, setReverb] = useState(0.3);
   const [filterCutoff, setFilterCutoff] = useState(20000);
+  const [ready, setReady] = useState(false);
   const editorRef = useRef(null);
   const rollRef = useRef(null);
   const editorInstance = useRef(null);
@@ -72,7 +73,9 @@ export function useStrudelEditor() {
     const irBuffer = ctx.createBuffer(2, ctx.sampleRate * 2, ctx.sampleRate);
     for (let ch = 0; ch < 2; ch++) {
       const channelData = irBuffer.getChannelData(ch);
-      for (let i = 0; i < data.length; i++) data[i] = (Math.random() * 2 - 1);
+      for (let i = 0; i < channelData.length; i++) {
+        channelData[i] = Math.random() * 2 - 1;
+      }
     }
     convolver.buffer = irBuffer;
 
@@ -81,22 +84,80 @@ export function useStrudelEditor() {
     filterNode.type = "lowpass";
     filterNode.frequency.value = filterCutoff;
 
-    // Connect nodes: Source -> Filter -> Reverb -> Gain -> Destination
-    webaudioOutput.node.disconnect();
+  // Connect nodes only if Strudel output is available
+  if (webaudioOutput?.node) {
+    try {
+      webaudioOutput.node.disconnect();
+    } catch (_) {
+      /* ignore */
+    }
     webaudioOutput.node.connect(filterNode);
     filterNode.connect(convolver);
     convolver.connect(gainNode);
     gainNode.connect(ctx.destination);
+  }
 
-    //Save references
-    effectsRef.current = { gain: gainNode, reverb: convolver, filter:filterNode };
+  // Save references
+  effectsRef.current = { gain: gainNode, reverb: convolver, filter: filterNode };
 
-    return () => {
-      gainNode.disconnect();
-      convolver.disconnect();
-      filterNode.disconnect();
+  // Safe cleanup
+  return () => {
+    try {
+      if (filterNode) filterNode.disconnect();
+      if (convolver) convolver.disconnect();
+      if (gainNode) gainNode.disconnect();
+      if (webaudioOutput?.node) webaudioOutput.node.disconnect();
+    } catch (err) {
+      console.warn("Audio cleanup error:", err);
+    }
     };
-  }, []
+  }, []); //run once on mount
+
+  //Update volume
+  useEffect(() => {
+    if (!ready) return;
+    const fx = effectsRef.current;
+    if (fx?.gain && fx?.ctx) {
+      fx.gain.gain.setTargetAtTime(Math.pow(10, volume / 20), fx.ctx.currentTime, 0.05);
+    }
+  }, [ready, volume]);
+
+  //Update filter cutoff
+  useEffect(() => {
+    if (!ready) return;
+    const fx = effectsRef.current;
+    if (fx?.filter && fx?.ctx) {
+      fx.filter.frequency.setTargetAtTime(filterCutoff, fx.ctx.currentTime, 0.05);
+    }
+  }, [ready, filterCutoff]);
+
+  // Reverb wet amount could be faked by scaling gain (basic implementation could be altered)
+  useEffect(() => {
+    if (!ready) return;
+    const fx = effectsRef.current;
+    if (fx?.ctx && fx?.filter && fx?.reverb && fx?.gain) {
+      if (!fx.dryNode) {
+        const dryNode = fx.ctx.createGain();
+        const wetNode = fx.ctx.createGain();
+
+        fx.filterNode.disconnect();
+        fx.filterNode.connect(dryNode);
+        fx.filterNode.connect(fx.convolver);
+
+        fx.convolver.connect(wetNode);
+        dryNode.connect(fx.gainNode);
+        wetNode.connect(fx.gainNode);
+
+        fx.dryNode = dryNode;
+        fx.wetNode = wetNode;
+      }
+
+      fx.dryNode.gain.setTargetAtTime(1 - reverb, fx.ctx.currentTime, 0.05);
+      fx.wetNode.gain.setTargetAtTime(reverb, fx.ctx.currentTime, 0.05);
+    } else {
+      console.warn("Reverb nodes not ready yet");
+    }
+  }, [ready, reverb]);
   
 
   const processOnly = () => {
@@ -121,5 +182,11 @@ export function useStrudelEditor() {
     stop,
     rollRef,
     editorRef,
+    volume,
+    setVolume,
+    reverb,
+    setReverb,
+    filterCutoff,
+    setFilterCutoff,
   };
 }
