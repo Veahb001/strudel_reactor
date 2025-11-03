@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import * as d3 from 'd3';
+import {useEffect, useState} from 'react';
 import WaveformVisualiser from './WaveformVisualiser';
 import { useStrudelEditor } from "../../hooks/useStrudelEditor";
 import StrudelEditor from "./StrudelEditor";
@@ -6,6 +7,7 @@ import ControlPanel from "./ControlPanel";
 import RadioControls from "./RadioControls";
 import PianorollCanvas from "./PianorollCanvas";
 import PatternLibrary from "./PatternLibrary";
+import D3Graph from './D3Graph';
 import './style.css'
 
 export default function StrudelDemo() {
@@ -27,6 +29,16 @@ export default function StrudelDemo() {
   } = useStrudelEditor();
 
   const [isPlaying, setIsPlaying] = useState(false);
+  const [logData, setLogData] = useState([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (window.strudelLog && window.strudelLog.length > 0) {
+        setLogData([...window.strudelLog].slice(-100));
+      }
+    }, 500);
+    return () => clearInterval(interval);
+  }, []);
 
   const handlePlay = () => {
     play();
@@ -88,9 +100,16 @@ export default function StrudelDemo() {
 
       <div className="row mt-3">
         <div className="col-md-12">
+          <D3Graph />
+        </div>
+      </div>
+
+      <div className="row mt-3">
+        <div className="col-md-12">
           <WaveformVisualiser isPlaying={isPlaying} />
         </div>
       </div>
+
 
       <div className="row mt-3">
         <div className="col-md-12">

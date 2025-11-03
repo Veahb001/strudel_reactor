@@ -30,7 +30,34 @@ export function useStrudelEditor() {
       console.warn('Refs not ready yet, waiting...') 
       return;
     }
+
+    if (editorInstance.current) {
+      console.warn('Editor instance already initialized');
+      return;
+    } 
     console_monkey_patch();
+
+    if (!window.strudelLog) window.strudelLog = [];
+
+    // Always use the original, unpatched console
+    const nativeConsole = window.__nativeConsole || window.console;
+
+    // Create a new function wrapper
+    window.console.log = (...args) => {
+      try {
+        // Log to real console
+        nativeConsole.log(...args);
+
+        // If numeric values are logged, store them in the global array
+        const numeric = args.map(a => parseFloat(a)).filter(a => !isNaN(a));
+        if (numeric.length) {
+          window.strudelLog.push(numeric[0]);
+          if (window.strudelLog.length > 100) window.strudelLog.shift();
+        }
+      } catch (err) {
+        nativeConsole.warn("Strudel log capture failed:", err);
+      }
+    };
 
     const canvas = rollRef.current;
     const ctx = canvas.getContext("2d");

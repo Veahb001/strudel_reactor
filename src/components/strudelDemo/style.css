@@ -95,9 +95,10 @@ canvas#roll {
   margin-bottom: 20px;
 }
 
-textarea.form-control {
+textarea.form-control,
+.strudel-textarea {
   background-color: #1e1e1e;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid #333;
   border-radius: 8px;
   padding: 10px;

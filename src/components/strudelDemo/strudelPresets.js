@@ -1,4 +1,5 @@
 export const strudelPresets = {
+
   basic: {
     name: "Basic Beat",
     description: "Simple drum pattern",

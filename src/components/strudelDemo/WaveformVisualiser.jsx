@@ -173,14 +173,15 @@ export default function WaveformVisualiser({ isPlaying }) {
       <div className="visualiser-header">
         <h5>
           Audio Waveform 
-          {isPlaying && <span className="live-indicator">● LIVE</span>}
-          {!isConnected && <span className="status-indicator">⚠ Not Connected</span>}
+          <br/>
+          {isPlaying && <span className="live-indicator">LIVE</span>}
+          {!isPlaying && <span className="status-indicator">Not Connected</span>}
         </h5>
       </div>
-      <canvas 
+      {/* <canvas 
         ref={canvasRef} 
         className="waveform-canvas"
-      />
+      /> */}
     </div>
   );
 }
