@@ -18,6 +18,7 @@ export default function StrudelDemo() {
     processOnly,
     play,
     stop,
+    pause,
     rollRef,
     editorRef,
     volume,
@@ -50,6 +51,11 @@ export default function StrudelDemo() {
     setIsPlaying(false);
   };
 
+  const handlePause = () => {
+    pause();
+    setIsPlaying(false);
+  };
+
   const handleProcAndPlay = () => {
     procAndPlay();
     setIsPlaying(true);
@@ -62,6 +68,11 @@ export default function StrudelDemo() {
   return (
     <div>
       <div className="strudel-page container-fluid">
+      <div>
+        <h1>
+          Strudel Editor
+        </h1>
+      </div>
       {/* Top Controls */}
       <div className="row align-items-center top-controls">
           <ControlPanel
@@ -69,6 +80,7 @@ export default function StrudelDemo() {
             onProcAndPlay={handleProcAndPlay}
             onPlay={handlePlay}
             onStop={handleStop}
+            onPause={handlePause}
             volume={volume}
             onVolumeChange={setVolume}
             reverb={reverb}
@@ -76,6 +88,11 @@ export default function StrudelDemo() {
             filterCutoff={filterCutoff}
             onFilterCutoffChange={setFilterCutoff}
           />
+      </div>
+
+      {/* Radio controls */}
+      <div className="row align-items-center radio-controls">
+        <RadioControls onChange={procAndPlay} />
       </div>
 
       <div className="row mt-3">
@@ -117,10 +134,6 @@ export default function StrudelDemo() {
         </div>
       </div>
 
-            {/* Bottom radio controls */}
-      <div className="row">
-        <RadioControls onChange={procAndPlay} />
-      </div>
       </div>
     </div>
   );

@@ -2,7 +2,8 @@ export default function ControlPanel({
   onProcess, 
   onProcAndPlay, 
   onPlay, 
-  onStop, 
+  onStop,
+  onPause, 
   volume, 
   onVolumeChange, 
   reverb, 
@@ -14,8 +15,10 @@ export default function ControlPanel({
         <div className="control-panel-wrapper">
             {/* Buttons Section */}
             <div className="control-buttons">
-                <button id="play" className="btn btn-outline-primary" onClick={onPlay}>Play</button>
-                <button id="stop" className="btn btn-outline-primary" onClick={onStop}>Stop</button>
+                <button id="play" className="btn btn-outline-primary" onClick={onPlay}>▶</button>
+                <button id="stop" className="btn btn-outline-primary" onClick={onPause}>❚❚</button>
+                <button id="stop" className="btn btn-outline-primary" onClick={onStop}>⏹</button>
+                <br/>
                 <button id="process" className="btn btn-outline-primary" onClick={onProcess}>Preprocess</button>
                 <button id="process_play" className="btn btn-outline-primary" onClick={onProcAndPlay}>Proc & Play</button>
             </div>

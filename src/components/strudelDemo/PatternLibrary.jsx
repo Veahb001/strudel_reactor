@@ -1,124 +1,128 @@
 //LOAD FROM JSON
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-export default function PatternLibrary({ onLoadPattern }) {
-  const [presets, setPresets] = useState([]);
-  const [loading, setLoading] = useState(true);
+// export default function PatternLibrary({ onLoadPattern }) {
+//   const [presets, setPresets] = useState([]);
+//   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function loadPresets() {
-      try {
-        // Step 1: Fetch a list of files manually
-        // Since there's no directory listing in public, you can hardcode a small manifest:
-        const presetFiles = ["house.json", "ambient.json"];
+//   useEffect(() => {
+//     async function loadPresets() {
+//       try {
+//         const presetFiles = ["basicrock.json"];
 
-        // Step 2: Fetch each JSON file
-        const loadedPresets = await Promise.all(
-          presetFiles.map(async (file) => {
-            const res = await fetch(`/presets/${file}`);
-            return res.json();
-          })
-        );
+//         const loadedPresets = await Promise.all(
+//           presetFiles.map(async (file) => {
+//             const res = await fetch(`/presets/${file}`);
+//             return res.json();
+//           })
+//         );
 
-        setPresets(loadedPresets);
-      } catch (err) {
-        console.error("Error loading presets:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
+//         setPresets(loadedPresets);
+//       } catch (err) {
+//         console.error("Error loading presets:", err);
+//       } finally {
+//         setLoading(false);
+//       }
+//     }
 
-    loadPresets();
-  }, []);
+//     loadPresets();
+//   }, []);
 
-  if (loading) {
-    return <div className="pattern-library">Loading presets...</div>;
-  }
+//   if (loading) {
+//     return <div className="pattern-library">Loading presets...</div>;
+//   }
 
-  return (
-    <div className="pattern-library">
-      <h5>🎵 Pattern Library</h5>
-      <ul className="preset-list">
-        {presets.map((preset, i) => (
-          <li key={i} className="preset-item">
-            <button
-              onClick={() => onLoadPattern(preset.patternCode)}
-              className="btn btn-sm btn-primary me-2"
-            >
-              Load
-            </button>
-            <strong>{preset.name}</strong> — {preset.description}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+//   return (
+//     <div className="pattern-library">
+//       <h5>Pattern Library</h5>
+//       <ul className="preset-list">
+//         {presets.map((preset, i) => (
+//           <li key={i} className="preset-item">
+//             <select 
+//               id="preset-select"
+//               className="preset-dropdown"
+//               value={selectedPreset}
+//               onChange={handlePresetChange}
+//             >
+//               <option value="">-- Select a Preset --</option>
+//               {presets.map(preset => (
+//                 <option key={preset.id} value={preset.id}>
+//                   {preset.name} - {preset.description}
+//                 </option>
+//               ))}
+//             </select>
+//             <strong>{preset.name}</strong> — {preset.description}
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
 
 
 
 // LOAD FROM JSX 
-// import { useState } from 'react';
-// import { strudelPresets, getPresetsArray } from './strudelPresets';
+import { useState } from 'react';
+import { strudelPresets, getPresetsArray } from './strudelPresets';
 
-// export default function PatternLibrary({ onLoadPattern }) {
-//   const [selectedPreset, setSelectedPreset] = useState('');
-//   const presets = getPresetsArray();
+export default function PatternLibrary({ onLoadPattern }) {
+  const [selectedPreset, setSelectedPreset] = useState('');
+  const presets = getPresetsArray();
 
-//   const handlePresetChange = (e) => {
-//     const presetId = e.target.value;
-//     setSelectedPreset(presetId);
+  const handlePresetChange = (e) => {
+    const presetId = e.target.value;
+    setSelectedPreset(presetId);
     
-//     if (presetId && strudelPresets[presetId]) {
-//       onLoadPattern(strudelPresets[presetId].code);
-//     }
-//   };
+    if (presetId && strudelPresets[presetId]) {
+      onLoadPattern(strudelPresets[presetId].code);
+    }
+  };
 
-//   const handleClear = () => {
-//     setSelectedPreset('');
-//     onLoadPattern('');
-//   };
+  const handleClear = () => {
+    setSelectedPreset('');
+    onLoadPattern('');
+  };
 
-//   return (
-//     <div className="pattern-library">
-//       <div className="preset-selector">
-//         <label htmlFor="preset-select" className="preset-label">
-//           Pattern Library:
-//         </label>
+  return (
+    <div className="pattern-library">
+      <div className="preset-selector">
+        <label htmlFor="preset-select" className="preset-label">
+          Pattern Library:
+        </label>
         
-//         <select 
-//           id="preset-select"
-//           className="preset-dropdown"
-//           value={selectedPreset}
-//           onChange={handlePresetChange}
-//         >
-//           <option value="">-- Select a Preset --</option>
-//           {presets.map(preset => (
-//             <option key={preset.id} value={preset.id}>
-//               {preset.name} - {preset.description}
-//             </option>
-//           ))}
-//         </select>
+        <select 
+          id="preset-select"
+          className="preset-dropdown"
+          value={selectedPreset}
+          onChange={handlePresetChange}
+        >
+          <option value="">-- Select a Preset --</option>
+          {presets.map(preset => (
+            <option key={preset.id} value={preset.id}>
+              {preset.name} - {preset.description}
+            </option>
+          ))}
+        </select>
 
-//         {selectedPreset && (
-//           <button 
-//             className="btn btn-secondary btn-sm"
-//             onClick={handleClear}
-//             title="Clear and start fresh"
-//           >
-//             X Clear
-//           </button>
-//         )}
-//       </div>
+        {selectedPreset && (
+          <button 
+            className="btn btn-secondary btn-sm"
+            onClick={handleClear}
+            title="Clear and start fresh"
+          >
+            X Clear
+          </button>
+        )}
+      </div>
 
-//       {selectedPreset && strudelPresets[selectedPreset] && (
-//         <div className="preset-info">
-//           <span className="preset-badge">{strudelPresets[selectedPreset].category}</span>
-//           <span className="preset-description">
-//             {strudelPresets[selectedPreset].description}
-//           </span>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
+      {selectedPreset && strudelPresets[selectedPreset] && (
+        <div className="preset-info">
+          <span className="preset-badge">{strudelPresets[selectedPreset].category}</span>
+          <span className="preset-description">
+            {strudelPresets[selectedPreset].description}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
