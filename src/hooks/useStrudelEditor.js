@@ -17,6 +17,7 @@ export function useStrudelEditor() {
   const editorRef = useRef(null);
   const rollRef = useRef(null);
   const editorInstance = useRef(null);
+  const [bpm, setBpm] = useState(120); //Current Default is 120BPM
 
   const effectsRef = useRef({
   gain: null,
@@ -147,7 +148,7 @@ export function useStrudelEditor() {
       }
     }
     };
-  }, [editorInstance.current]); 
+  }, [volume]); 
 
   //Update volume
   useEffect(() => {
@@ -160,9 +161,31 @@ export function useStrudelEditor() {
     }
   }, [ready, volume]);
 
+  //Update BPM
+  const applyBpm = (code) => {
+    //Check if preproc code already has '.cpm()' or '.setBpm()'
+    if (code.includes('.cpm(') || code.includes('setBpm(')) {
+      code = code.replace(/\.cpm\([^)]*\)/g, `.cpm(${bpm})`);
+      code = code.replace(/\.setBpm\([^)]*\)/g, `.cpm(${bpm})`);
+    }else{
+      // Add BPM to the end of the pattern
+      // Find the last pattern and add .cpm() to it
+      code = code.trim();
+      if (!code.endsWith('.cpm()')) {
+        code = `${code}.cpm(${bpm})`;
+      }
+    }
+  }
+
 
   const processOnly = () => {
-    const newCode = processText(procText);
+    //const newCode = processText(procText);
+    let newCode = processText(procText);
+
+    //Apply BPM to the code
+    if (!newCode.includes('.cpm(') && !newCode.includes('setBpm(')) {
+      newCode = `${newCode}.cpm(${bpm})`;
+    }
     editorInstance.current.setCode(newCode);
   };
 
@@ -187,5 +210,7 @@ export function useStrudelEditor() {
     setVolume,
     reverb,
     setReverb,
+    bpm,
+    setBpm,
   };
 }

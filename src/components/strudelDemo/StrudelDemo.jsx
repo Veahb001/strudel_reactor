@@ -27,6 +27,8 @@ export default function StrudelDemo() {
     reverb,
     onReverbChange,
     setReverb,
+    bpm,
+    setBpm,
   } = useStrudelEditor();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -116,6 +118,8 @@ export default function StrudelDemo() {
             onVolumeChange={setVolume}
             reverb={reverb}
             onReverbChange={setReverb}
+            bpm={bpm}
+            onBpmChange={setBpm}
           />
       </div>
 
