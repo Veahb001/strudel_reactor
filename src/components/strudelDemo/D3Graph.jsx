@@ -10,33 +10,33 @@ export default function D3Graph() {
     const maxValue = 1;
 
     useEffect(() => {
-        const handleD3Data = (event) => {
-          const data = event.detail;
-          if (data.length > 0) {
-            const latestHap = data[data.length - 1];
-            setRngNumber(latestHap)
-          }
+        const handleHapData = (event) => {
+            const data = event.detail;
+            if (data && data.length > 0) {
+                const latestValue = data[data.length - 1]
+                setRngNumber(latestValue);
+            }
         };
-      document.addEventListener('d3Data', handleD3Data);
 
-      const interval = setInterval (() => {
-        const currentData = getD3Data();
-        if (currentData.length > 0) {
-          setRngNumber(currentData[currentData.length - 1]);
-        }
-      }, timeOut);
+        document.addEventListener('strudelHapData', handleHapData);
 
-      return () => {
-        document.removeEventListener('d3Data', handleD3Data);
-        clearInterval(interval);
-      }
-      }, [])
+        return () => {
+            document.removeEventListener('strudelHapData', handleHapData);
+        };
+        }, []);
+
 
     useEffect(() => {
-        let tempArray = [...rngArray, rngNumber];
-        if (tempArray.length > maxItems) { tempArray.shift() }
-        setRngArray(tempArray);
-        //console.log(rngArray)
+        let tempArray = [...rngArray];
+
+        if (typeof rngNumber === 'number' && !isNaN(rngNumber)) {
+            tempArray.push(rngNumber);
+            if (tempArray.length > maxItems) {
+                tempArray.shift();
+            }
+            setRngArray(tempArray);
+        }
+        
     }, [rngNumber]);
 
     useEffect(() => {
@@ -99,21 +99,32 @@ export default function D3Graph() {
 
     }, [rngArray]);
 
+    // function LogToNum(input) {
+    //     if (!input) { return 0 };
+
+    //     if (typeof input === 'number') {
+    //         return input;
+    //     }
+
+    //     //If already a string (such as hap) parse
+    //     if (typeof input == 'string'){
+    //       var stringArray = input.split(/(\s+)/)
+
+    //       for (const item of stringArray) {
+    //           if (item.startsWith('gain:')) {
+    //               let val = item.substring(5)
+    //               return Number(val)
+    //           }
+    //       }
+    //   }
+    // return 0;
+    // }
+
     function LogToNum(input) {
-        if (!input) { return 0 };
-
-        //If already a string (such as hap) parse
-        if (typeof input == 'string'){
-          var stringArray = input.split(/(\s+)/)
-
-          for (const item of stringArray) {
-              if (item.startsWith('gain:')) {
-                  let val = item.substring(5)
-                  return Number(val)
-              }
-          }
-      }
-    return 0;
+        if (typeof input === 'number' && !isNaN(input)) {
+            return input;
+        }
+        return 0;
     }
 
     return (
@@ -124,7 +135,7 @@ export default function D3Graph() {
             </h2>
             <div className="row">
                 <svg width="100%" height="600 px"
-                class="border border-primary round p-2"></svg>
+                className="border border-primary round p-2"></svg>
 
             </div>
         

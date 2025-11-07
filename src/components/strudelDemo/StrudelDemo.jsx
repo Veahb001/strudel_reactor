@@ -8,6 +8,7 @@ import RadioControls from "./RadioControls";
 import PianorollCanvas from "./PianorollCanvas";
 import PatternLibrary from "./PatternLibrary";
 import D3Graph from './D3Graph';
+import SettingsManager from '../settingsManager';
 import './style.css'
 
 export default function StrudelDemo() {
@@ -18,15 +19,14 @@ export default function StrudelDemo() {
     processOnly,
     play,
     stop,
-    // pause,
     rollRef,
     editorRef,
     volume,
+    onVolumeChange,
     setVolume,
     reverb,
+    onReverbChange,
     setReverb,
-    filterCutoff,
-    setFilterCutoff,
   } = useStrudelEditor();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -65,6 +65,11 @@ export default function StrudelDemo() {
     setProcText(patternCode);
   } 
 
+  const handleLoadSettings = (settings) => {
+    if (settings.volume !== undefined) setVolume(settings.volume);
+    if (settings.reverb !== undefined) setVolume(settings.reverb);
+  };
+
   //Pause/Play using Spacebar
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -76,8 +81,10 @@ export default function StrudelDemo() {
       if (event.code === 'Space') {
           if (isPlaying) {
             handleStop();
+            event.preventDefault();
           }else{
             handlePlay();
+            event.preventDefault();
           }
         }
       
@@ -110,13 +117,10 @@ export default function StrudelDemo() {
             onProcAndPlay={handleProcAndPlay}
             onPlay={handlePlay}
             onStop={handleStop}
-            // onPause={handlePause}
             volume={volume}
             onVolumeChange={setVolume}
             reverb={reverb}
             onReverbChange={setReverb}
-            filterCutoff={filterCutoff}
-            onFilterCutoffChange={setFilterCutoff}
           />
       </div>
 

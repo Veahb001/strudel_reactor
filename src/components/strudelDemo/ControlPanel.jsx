@@ -1,15 +1,15 @@
+import SettingsManager from "../settingsManager";
+
 export default function ControlPanel({ 
   onProcess, 
   onProcAndPlay, 
   onPlay, 
   onStop,
-//   onPause, 
   volume, 
   onVolumeChange, 
   reverb, 
   onReverbChange, 
-  filterCutoff, 
-  onFilterCutoffChange 
+  handleLoadSettings,
 }) {                   
     return(
         <div className="control-panel-wrapper">
@@ -49,17 +49,14 @@ export default function ControlPanel({
                         className="form-range"
                     />
                 </div>
+            </div>
 
-                <div className="slider-group">
-                    <label className="form-label">Filter Cutoff: {filterCutoff} Hz</label>
-                    <input 
-                        type="range" 
-                        min="500" 
-                        max="20000" 
-                        step="100" 
-                        value={filterCutoff} 
-                        onChange={(e) => onFilterCutoffChange(parseFloat(e.target.value))} 
-                        className="form-range"
+            <div className="row mt-2">
+                <div className="col-md-12">
+                    <SettingsManager
+                    volume={volume}
+                    reverb={reverb}
+                    onLoadSettings={handleLoadSettings}
                     />
                 </div>
             </div>

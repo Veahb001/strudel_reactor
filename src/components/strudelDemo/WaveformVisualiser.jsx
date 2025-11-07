@@ -178,10 +178,10 @@ export default function WaveformVisualiser({ isPlaying }) {
           {!isPlaying && <span className="status-indicator">Not Connected</span>}
         </h5>
       </div>
-      {/* <canvas 
+      <canvas 
         ref={canvasRef} 
         className="waveform-canvas"
-      /> */}
+      />
     </div>
   );
 }

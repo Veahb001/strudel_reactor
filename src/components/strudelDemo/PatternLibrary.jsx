@@ -61,7 +61,7 @@
 
 
 
-// LOAD FROM JSX 
+// LOAD FROM JS ARRAY 
 import { useState } from 'react';
 import { strudelPresets, getPresetsArray } from './strudelPresets';
 
