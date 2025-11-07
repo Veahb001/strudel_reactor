@@ -18,7 +18,7 @@ export default function StrudelDemo() {
     processOnly,
     play,
     stop,
-    pause,
+    // pause,
     rollRef,
     editorRef,
     volume,
@@ -51,10 +51,10 @@ export default function StrudelDemo() {
     setIsPlaying(false);
   };
 
-  const handlePause = () => {
-    pause();
-    setIsPlaying(false);
-  };
+  // const handlePause = () => {
+  //   pause();
+  //   setIsPlaying(false);
+  // };
 
   const handleProcAndPlay = () => {
     procAndPlay();
@@ -64,6 +64,36 @@ export default function StrudelDemo() {
   const handleLoadPattern = (patternCode) => {
     setProcText(patternCode);
   } 
+
+  //Pause/Play using Spacebar
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.target.tagName === 'INPUT' || event.target.tagName =='TEXTAREA') {
+        return;
+      } 
+      
+      //When spacebar pressed pause and play music
+      if (event.code === 'Space') {
+          if (isPlaying) {
+            handleStop();
+          }else{
+            handlePlay();
+          }
+        }
+      
+      //When Enter pressed proc and play music
+      if (event.code === 'Enter'){
+        event.preventDefault();
+        handleProcAndPlay();
+      }
+  };
+
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+      };
+    }, [isPlaying]);
 
   return (
     <div>
@@ -80,7 +110,7 @@ export default function StrudelDemo() {
             onProcAndPlay={handleProcAndPlay}
             onPlay={handlePlay}
             onStop={handleStop}
-            onPause={handlePause}
+            // onPause={handlePause}
             volume={volume}
             onVolumeChange={setVolume}
             reverb={reverb}
