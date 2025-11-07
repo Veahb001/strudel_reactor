@@ -8,7 +8,7 @@ import RadioControls from "./RadioControls";
 import PianorollCanvas from "./PianorollCanvas";
 import PatternLibrary from "./PatternLibrary";
 import D3Graph from './D3Graph';
-import SettingsManager from '../settingsManager';
+import SettingsManager from './settingsManager';
 import './style.css'
 
 export default function StrudelDemo() {
@@ -51,11 +51,6 @@ export default function StrudelDemo() {
     setIsPlaying(false);
   };
 
-  // const handlePause = () => {
-  //   pause();
-  //   setIsPlaying(false);
-  // };
-
   const handleProcAndPlay = () => {
     procAndPlay();
     setIsPlaying(true);
@@ -70,7 +65,6 @@ export default function StrudelDemo() {
     if (settings.reverb !== undefined) setVolume(settings.reverb);
   };
 
-  //Pause/Play using Spacebar
   useEffect(() => {
     const handleKeyPress = (event) => {
       if (event.target.tagName === 'INPUT' || event.target.tagName =='TEXTAREA') {
@@ -91,6 +85,7 @@ export default function StrudelDemo() {
       //When Enter pressed proc and play music
       if (event.code === 'Enter'){
         event.preventDefault();
+        handleStop();
         handleProcAndPlay();
       }
   };

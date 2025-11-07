@@ -1,4 +1,4 @@
-import SettingsManager from "../settingsManager";
+import SettingsManager from "./settingsManager";
 
 export default function ControlPanel({ 
   onProcess, 

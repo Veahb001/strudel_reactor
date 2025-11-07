@@ -56,17 +56,8 @@ export function useStrudelEditor() {
             const latestHap = haps[0];
             const gain = latestHap.value?.gain  ?? 0.5;
 
-            ///const note = latestHap?.value?.note ?? 60;
-            //const normalisedNote = note / 127;
-
-            const 
-
             if(!window.strudelHapData) {
               window.strudelHapData = [];
-
-            // window.strudelHapData.push(normalisedNote);
-            // if (window.strudelHapData.length > 100)
-            //   window.strudelHapData.shift();
 
             window.strudelHapData.push(gain);
             if (window.strudelHapData.length > 100)
