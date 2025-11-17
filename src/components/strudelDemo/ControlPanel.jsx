@@ -6,9 +6,7 @@ export default function ControlPanel({
   onPlay, 
   onStop,
   volume, 
-  onVolumeChange, 
-  reverb, 
-  onReverbChange, 
+  onVolumeChange,  
   handleLoadSettings,
   bpm,
   onBpmChange
@@ -40,20 +38,7 @@ export default function ControlPanel({
                 </div>
 
                 <div className="slider-group">
-                    <label className="form-label">Reverb: {reverb.toFixed(2)}</label>
-                    <input 
-                        type="range" 
-                        min="0" 
-                        max="1" 
-                        step="0.01" 
-                        value={reverb} 
-                        onChange={(e) => onReverbChange(parseFloat(e.target.value))} 
-                        className="form-range"
-                    />
-                </div>
-
-                <div className="slider-group">
-                    <label className="form-label">BPM: {bpm.toFixed(2)}</label>
+                    <label className="form-label">BPM: {bpm}</label>
                     <input 
                         type="range" 
                         min="40" 

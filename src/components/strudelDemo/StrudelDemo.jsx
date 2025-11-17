@@ -65,7 +65,14 @@ export default function StrudelDemo() {
   const handleLoadSettings = (settings) => {
     if (settings.volume !== undefined) setVolume(settings.volume);
     if (settings.reverb !== undefined) setVolume(settings.reverb);
-  };
+    };
+
+    const handleBpmChange = (newBpm) => {
+        setBpm(newBpm);
+        setTimeout(() => {
+            procAndPlay();
+        }, 100);
+    };
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -119,7 +126,7 @@ export default function StrudelDemo() {
             reverb={reverb}
             onReverbChange={setReverb}
             bpm={bpm}
-            onBpmChange={setBpm}
+            onBpmChange={handleBpmChange}
           />
       </div>
 
