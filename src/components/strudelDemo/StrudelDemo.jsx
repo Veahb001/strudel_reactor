@@ -10,6 +10,7 @@ import PatternLibrary from "./PatternLibrary";
 import D3Graph from './D3Graph';
 import SettingsManager from './settingsManager';
 import './style.css'
+import AnimatedVisual from './AnimatedVisual';
 
 export default function StrudelDemo() {
   const {
@@ -24,9 +25,6 @@ export default function StrudelDemo() {
     volume,
     onVolumeChange,
     setVolume,
-    reverb,
-    onReverbChange,
-    setReverb,
     bpm,
     setBpm,
   } = useStrudelEditor();
@@ -115,20 +113,23 @@ export default function StrudelDemo() {
         </h1>
       </div>
       {/* Top Controls */}
-      <div className="row align-items-center top-controls">
-          <ControlPanel
-            onProcess={processOnly}
-            onProcAndPlay={handleProcAndPlay}
-            onPlay={handlePlay}
-            onStop={handleStop}
-            volume={volume}
-            onVolumeChange={setVolume}
-            reverb={reverb}
-            onReverbChange={setReverb}
-            bpm={bpm}
-            onBpmChange={handleBpmChange}
-          />
-      </div>
+        <div className="row align-items-start top-controls">
+            <div className="col-md-4">
+                <AnimatedVisual isPlaying={isPlaying} bpm={bpm} />
+            </div>
+            <div className="col-md-8">
+                <ControlPanel
+                    onProcess={processOnly}
+                    onProcAndPlay={handleProcAndPlay}
+                    onPlay={handlePlay}
+                    onStop={handleStop}
+                    volume={volume}
+                    onVolumeChange={setVolume}
+                    bpm={bpm}
+                    onBpmChange={handleBpmChange}
+                />
+            </div>
+        </div>
 
       {/* Radio controls */}
       <div className="row align-items-center radio-controls">

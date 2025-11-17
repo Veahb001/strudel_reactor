@@ -23,13 +23,15 @@ canvas#roll {
 }
 
 .top-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 20px;
-  border-bottom: 1px solid #333;
-  background-color: #1a1a1a;
-  gap: 40px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    background-color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.top-controls .col-md-4,
+.top-controls .col-md-8 {
+    padding: 0 10px;
 }
 
 .control-buttons {
@@ -136,12 +138,32 @@ textarea.form-control:focus {
 }
 
 .control-panel-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.control-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.control-sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.control-panel-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    flex: 1;
 }
 
 .radio-controls {
