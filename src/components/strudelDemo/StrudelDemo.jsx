@@ -7,10 +7,11 @@ import ControlPanel from "./ControlPanel";
 import RadioControls from "./RadioControls";
 import PianorollCanvas from "./PianorollCanvas";
 import PatternLibrary from "./PatternLibrary";
-import D3Graph from './D3Graph';
 import SettingsManager from './settingsManager';
 import './style.css'
 import AnimatedVisual from './AnimatedVisual';
+import D3BarChart from './D3BarChart';
+import UserSongs from './UserSongs';
 
 export default function StrudelDemo() {
   const {
@@ -102,7 +103,16 @@ export default function StrudelDemo() {
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
       };
-    }, [isPlaying]);
+  }, [isPlaying]);
+
+    const handleLoadSong = (pattern, settings) => {
+        setProcText(pattern);
+
+        if (settings) {
+            if (settings.volume !== undefined) setVolume(settings.volume);
+            if (settings.bpm !== undefined) setBpm(settings.bpm);
+        }
+    };
 
   return (
     <div>
@@ -140,6 +150,16 @@ export default function StrudelDemo() {
         <div className="col-md-12">
           <PatternLibrary onLoadPattern={handleLoadPattern} />
         </div>
+              </div>
+
+      <div className="row mt-3">
+          <div className="col-md-12">
+              <UserSongs
+                  currentPattern={procText}
+                  currentSettings={{ volume, bpm }}
+                  onLoadSong={handleLoadSong}
+              />
+          </div>
       </div>
 
         {/* Both Editors Side-by-Side */}
@@ -158,16 +178,9 @@ export default function StrudelDemo() {
 
       <div className="row mt-3">
         <div className="col-md-12">
-          <D3Graph />
+          <D3BarChart/>
         </div>
       </div>
-
-      <div className="row mt-3">
-        <div className="col-md-12">
-          <WaveformVisualiser isPlaying={isPlaying} />
-        </div>
-      </div>
-
 
       <div className="row mt-3">
         <div className="col-md-12">
