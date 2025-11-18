@@ -1,8 +1,3 @@
-/**
- * Extract BPM value from Strudel code
- * @param {string} code - Strudel pattern code
- * @returns {number} - Detected BPM or 120 as default
- */
 export function extractBpmFromCode(code) {
     // Try to extract from setcps(140/60/4) or setcps(140/4)
     const setcpsMatch = code.match(/setcps\(([\d.]+)/);
@@ -26,12 +21,6 @@ export function extractBpmFromCode(code) {
     return 120;
 }
 
-/**
- * Apply BPM value to Strudel code by replacing tempo functions
- * @param {string} code - Strudel pattern code
- * @param {number} bpm - BPM value to apply
- * @returns {string} - Modified code with new BPM
- */
 export function applyBpmToCode(code, bpm) {
     let newCode = code;
 

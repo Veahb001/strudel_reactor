@@ -1,17 +1,17 @@
+import './style.css'
 import * as d3 from 'd3';
 import {useEffect, useState} from 'react';
-import WaveformVisualiser from './WaveformVisualiser';
 import { useStrudelEditor } from "../../hooks/useStrudelEditor";
 import StrudelEditor from "./StrudelEditor";
 import ControlPanel from "./ControlPanel";
-import RadioControls from "./RadioControls";
 import PianorollCanvas from "./PianorollCanvas";
 import PatternLibrary from "./PatternLibrary";
-import SettingsManager from './settingsManager';
-import './style.css'
 import AnimatedVisual from './AnimatedVisual';
 import D3BarChart from './D3BarChart';
 import UserSongs from './UserSongs';
+//import TrackControls from './TrackControls';
+//import SettingsManager from './settingsManager';
+//import RadioControls from "./RadioControls";
 
 export default function StrudelDemo() {
   const {
@@ -24,10 +24,17 @@ export default function StrudelDemo() {
     rollRef,
     editorRef,
     volume,
-    onVolumeChange,
     setVolume,
+    reverb,
+    setReverb,
+    delay,
+    setDelay,
+    distortion,
+    setDistortion,
     bpm,
     setBpm,
+    mutedTracks,
+    setMutedTracks
   } = useStrudelEditor();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -64,14 +71,31 @@ export default function StrudelDemo() {
   const handleLoadSettings = (settings) => {
     if (settings.volume !== undefined) setVolume(settings.volume);
     if (settings.reverb !== undefined) setVolume(settings.reverb);
+    if (settings.delay !== undefined) setDelay(settings.delay);
+    if (settings.distortion !== undefined) setDistortion(settings.distortion);
+    if (settings.bpm !== undefined) setBpm(settings.bpm);
     };
 
-    const handleBpmChange = (newBpm) => {
-        setBpm(newBpm);
-        setTimeout(() => {
-            procAndPlay();
-        }, 100);
-    };
+  const handleBpmChange = (newBpm) => {
+      setBpm(newBpm);
+      setTimeout(() => {
+          procAndPlay();
+      }, 100);
+  };
+
+const handleToggleMute = (trackId, isMuted) => {
+    let newMutedTracks;
+    if (isMuted) {
+        newMutedTracks = [...mutedTracks, trackId];
+    } else {
+        newMutedTracks = mutedTracks.filter(id => id !== trackId);
+    }
+    setMutedTracks(newMutedTracks);
+
+    setTimeout(() => {
+        handleProcAndPlay();
+    }, 100);
+};
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -111,17 +135,21 @@ export default function StrudelDemo() {
         if (settings) {
             if (settings.volume !== undefined) setVolume(settings.volume);
             if (settings.bpm !== undefined) setBpm(settings.bpm);
+            //if (settings.reverb !== undefined) setReverb(settings.reverb);
+            //if (settings.delay !== undefined) setDelay(settings.delay);
+            //if (settings.distortion !== undefined) setDistortion(settings.distortion);
         }
     };
 
   return (
     <div>
       <div className="strudel-page container-fluid">
-      <div>
-        <h1>
-          Strudel Editor
-        </h1>
-      </div>
+      <header className="page-header">
+        <img src="/strudel.png" className="header=logo" />
+        <h1>Strudel Editor</h1>
+      </header>
+
+
       {/* Top Controls */}
         <div className="row align-items-start top-controls">
             <div className="col-md-4">
@@ -142,9 +170,14 @@ export default function StrudelDemo() {
         </div>
 
       {/* Radio controls */}
-      <div className="row align-items-center radio-controls">
-        <RadioControls onChange={procAndPlay} />
-      </div>
+      {/*<div className="row mt-3">*/}
+      {/*    <div className="col-md-12">*/}
+      {/*        <TrackControls*/}
+      {/*            mutedTracks={mutedTracks}*/}
+      {/*            onToggleMute={handleToggleMute}*/}
+      {/*        />*/}
+      {/*    </div>*/}
+      {/*</div>*/}
 
       <div className="row mt-3">
         <div className="col-md-12">
@@ -156,7 +189,7 @@ export default function StrudelDemo() {
           <div className="col-md-12">
               <UserSongs
                   currentPattern={procText}
-                  currentSettings={{ volume, bpm }}
+                          currentSettings={{ volume, bpm }}
                   onLoadSong={handleLoadSong}
               />
           </div>

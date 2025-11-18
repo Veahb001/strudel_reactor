@@ -2,19 +2,19 @@ import { useCallback } from "react";
 import { applyBpmToCode } from "../utils/bpmHelpers";
 import { processText } from "../utils/strudelProcessor";
 
-export function useBpmProcessor(bpm, editorInstance, procText) {
+export function useBpmProcessor(bpm, editorInstance, procText, mutedTracks) {
     const processOnly = useCallback(() => {
         if (!editorInstance.current) {
             console.warn('Editor instance not ready');
             return;
         }
 
-        let newCode = processText(procText);
+        let newCode = processText(procText, mutedTracks);
         newCode = applyBpmToCode(newCode, bpm);
 
         console.log('Applied BPM:', bpm);
         editorInstance.current.setCode(newCode);
-    }, [bpm, editorInstance, procText]);
+    }, [bpm, editorInstance, procText, mutedTracks]);
 
     const procAndPlay = useCallback(() => {
         console.log('ProcAndPlay called');

@@ -7,6 +7,12 @@ export default function ControlPanel({
   onStop,
   volume, 
   onVolumeChange,  
+  reverb,
+  onReverbChange,
+  delay,
+  onDelayChange,
+  distortion,
+  onDistortionChange,
   handleLoadSettings,
   bpm,
   onBpmChange
@@ -37,7 +43,30 @@ export default function ControlPanel({
                             className="form-range"
                         />
                     </div>
-
+                    {/*<div className="slider-group">*/}
+                    {/*    <label className="form-label">Delay: {(delay * 100).toFixed(0)}%</label>*/}
+                    {/*    <input*/}
+                    {/*        type="range"*/}
+                    {/*        min="0"*/}
+                    {/*        max="1"*/}
+                    {/*        step="0.01"*/}
+                    {/*        value={delay}*/}
+                    {/*        onChange={(e) => onDelayChange(parseFloat(e.target.value))}*/}
+                    {/*        className="form-range"*/}
+                    {/*    />*/}
+                    {/*</div>*/}
+                    {/*<div className="slider-group">*/}
+                    {/*    <label className="form-label">Distortion: {(distortion * 100).toFixed(0)}%</label>*/}
+                    {/*    <input*/}
+                    {/*        type="range"*/}
+                    {/*        min="0"*/}
+                    {/*        max="1"*/}
+                    {/*        step="0.01"*/}
+                    {/*        value={distortion}*/}
+                    {/*        onChange={(e) => onDistortionChange(parseFloat(e.target.value))}*/}
+                    {/*        className="form-range"*/}
+                    {/*    />*/}
+                    {/*</div>*/}
                     <div className="slider-group">
                         <label className="form-label">BPM: {bpm}</label>
                         <input 
@@ -54,6 +83,11 @@ export default function ControlPanel({
             <div className="row mt-2">
                 <div className="col-md-12">
                     <SettingsManager
+                        volume={volume}
+                        reverb={reverb}
+                        delay={delay}
+                        distortion={distortion}
+                        bpm={bpm}
                         onLoadSettings={handleLoadSettings}
                     />
                 </div>

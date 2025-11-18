@@ -12,6 +12,10 @@ export function useStrudelEditor() {
     const [procText, setProcText] = useState(stranger_tune);
     const [volume, setVolume] = useState(-6);
     const [bpm, setBpm] = useState(120);
+    const [reverb, setReverb] = useState(0.3);
+    const [delay, setDelay] = useState(0);
+    const [distortion, setDistortion] = useState(0);
+    const [mutedTracks, setMutedTracks] = useState([]);
 
     // Refs
     const editorRef = useRef(null);
@@ -26,8 +30,8 @@ export function useStrudelEditor() {
     // Custom Hooks
     const { captureHapData } = useHapDataCapture();
     const editorInstance = useStrudelInstance( editorRef, rollRef, procText, captureHapData );
-    const { ready } = useAudioEffects(volume);
-    const { processOnly, procAndPlay, play, stop } = useBpmProcessor(bpm, editorInstance, procText );
+    const { ready } = useAudioEffects(volume, reverb, delay, distortion);
+    const { processOnly, procAndPlay, play, stop } = useBpmProcessor(bpm, editorInstance, procText, mutedTracks );
 
     // Return
     return {
@@ -35,8 +39,16 @@ export function useStrudelEditor() {
         setProcText,
         volume,
         setVolume,
+        reverb,
+        setReverb,
+        delay,
+        setDelay,
+        distortion,
+        setDistortion,
         bpm,
         setBpm,
+        mutedTracks,
+        setMutedTracks,
         ready,
         rollRef,
         editorRef,

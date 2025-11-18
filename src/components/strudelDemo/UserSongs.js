@@ -151,7 +151,7 @@ export default function UserSongs({
 
     return (
         <div className="user-songs">
-            <h5>Current Songs</h5>
+            <h5>Custom Songs</h5>
 
             <div className="song-controls">
                 <button
@@ -258,6 +258,15 @@ export default function UserSongs({
                     </span>
                     <span className="song-detail">
                         Volume: {songs.find(s => s.id === parseInt(selectedSong)).settings?.volume || 'N/A'}dB
+                    </span>
+                    <span className="song-detail">
+                        Reverb: {((songs.find(s => s.id === parseInt(selectedSong)).settings?.reverb || 0) * 100).toFixed(0)}%
+                    </span>
+                    <span className="song-detail">
+                        Delay: {((songs.find(s => s.id === parseInt(selectedSong)).settings?.delay || 0) * 100).toFixed(0)}%
+                    </span>
+                    <span className="song-detail">
+                        Distortion: {((songs.find(s => s.id === parseInt(selectedSong)).settings?.distortion || 0) * 100).toFixed(0)}%
                     </span>
                 </div>
             )}

@@ -1,5 +1,0 @@
-{
-    "name": "Basic Beat",
-    "description": "Simple drum pattern",
-    "patternCode": "sound(bd sd, hh*4).speed(1)"
-}

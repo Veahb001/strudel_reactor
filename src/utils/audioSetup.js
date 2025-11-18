@@ -1,9 +1,5 @@
 import { initAudioOnFirstClick, getAudioContext, webaudioOutput } from "@strudel/webaudio";
 
-/**
- * Initialize audio context and return it
- * @returns {Promise<AudioContext|null>}
- */
 export async function initializeAudioContext() {
     await initAudioOnFirstClick();
     const ctx = getAudioContext();
@@ -16,12 +12,6 @@ export async function initializeAudioContext() {
     return ctx;
 }
 
-/**
- * Create and connect audio gain node
- * @param {AudioContext} ctx 
- * @param {number} volumeDb - Volume in decibels
- * @returns {GainNode|null}
- */
 export function createGainNode(ctx, volumeDb) {
     if (!ctx) return null;
 
@@ -31,12 +21,6 @@ export function createGainNode(ctx, volumeDb) {
     return gainNode;
 }
 
-/**
- * Connect audio nodes in chain: source -> gain -> destination
- * @param {AudioContext} ctx
- * @param {GainNode} gainNode
- * @returns {boolean} - Success status
- */
 export function connectAudioChain(ctx, gainNode) {
     const output = webaudioOutput?.node;
 
@@ -57,10 +41,6 @@ export function connectAudioChain(ctx, gainNode) {
     return true;
 }
 
-/**
- * Disconnect and cleanup audio nodes
- * @param {GainNode} gainNode
- */
 export function disconnectAudioChain(gainNode) {
     try {
         if (gainNode) gainNode.disconnect();
@@ -70,11 +50,6 @@ export function disconnectAudioChain(gainNode) {
     }
 }
 
-/**
- * Update volume smoothly
- * @param {GainNode} gainNode
- * @param {number} volumeDb - New volume in decibels
- */
 export function updateVolume(gainNode, volumeDb) {
     if (!gainNode) return;
 
