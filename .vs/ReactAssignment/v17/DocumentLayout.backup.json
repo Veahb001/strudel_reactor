@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\useaudioeffects.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\useaudioeffects.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\public\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:public\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\usersongs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\usersongs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\strudelpresets.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\strudelpresets.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\animatedvisual.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\animatedvisual.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\strudeldemo.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -15,44 +31,80 @@
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\controlpanel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\usersongs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\usersongs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usestrudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usestrudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\strudelpresets.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\strudelpresets.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\patternlibrary.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\patternlibrary.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\strudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\strudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\d3barchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\d3barchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\tunes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\tunes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\strudelprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\strudelprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\console-monkey-patch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\console-monkey-patch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\animatedvisual.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\animatedvisual.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\bpmhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\bpmhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usestrudelinstance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usestrudelinstance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usestrudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usestrudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usehapdatacapture.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usehapdatacapture.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usebpmprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usebpmprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\useaudioeffects.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\useaudioeffects.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\patternlibrary.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\patternlibrary.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\pianorollcanvas.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\pianorollcanvas.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\radiocontrols.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\radiocontrols.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\settingsmanager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\settingsmanager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\strudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\strudeleditor.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\trackcontrols.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\trackcontrols.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\build\\static\\js\\main.a9f1ae9c.js.map||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:build\\static\\js\\main.a9f1ae9c.js.map||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\build\\static\\css\\main.5a92a439.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:build\\static\\css\\main.5a92a439.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\d3barchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\d3barchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\animatedvisual.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -61,34 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usebpmprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usebpmprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\bpmhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\bpmhelpers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\components\\strudeldemo\\settingsmanager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\strudeldemo\\settingsmanager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\audiosetup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\audiosetup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usehapdatacapture.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usehapdatacapture.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\hooks\\usestrudelinstance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\hooks\\usestrudelinstance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\harmon\\repos\\veahb001\\strudel_reactor\\src\\utils\\strudelprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\utils\\strudelprocessor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelProvider.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -102,195 +126,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserSongs.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\UserSongs.js",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\UserSongs.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\UserSongs.js",
-              "RelativeToolTip": "src\\components\\strudelDemo\\UserSongs.js",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAhwA0BAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-18T02:06:37.322Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PatternLibrary.jsx",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\PatternLibrary.jsx",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\PatternLibrary.jsx",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\PatternLibrary.jsx",
-              "RelativeToolTip": "src\\components\\strudelDemo\\PatternLibrary.jsx",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAuwH8AAAABAAAAAAAAAA==",
+              "Title": "Header.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\Header.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\Header.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\Header.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\Header.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-18T02:05:16.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T03:59:45.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "D3BarChart.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\D3BarChart.js",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\D3BarChart.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\D3BarChart.js",
-              "RelativeToolTip": "src\\components\\strudelDemo\\D3BarChart.js",
-              "ViewState": "AgIAACoAAAAAAAAAAAAewEUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-18T01:40:58.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StrudelDemo.jsx",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelDemo.jsx",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\StrudelDemo.jsx",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelDemo.jsx",
-              "RelativeToolTip": "src\\components\\strudelDemo\\StrudelDemo.jsx",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAhwEkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-17T07:53:37.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\style.css",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\style.css",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\style.css",
-              "RelativeToolTip": "src\\components\\strudelDemo\\style.css",
-              "ViewState": "AgIAALEBAAAAAAAAAAAkwOIBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-17T08:56:03.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "strudelPresets.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\strudelPresets.js",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\strudelPresets.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\strudelPresets.js",
-              "RelativeToolTip": "src\\components\\strudelDemo\\strudelPresets.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T07:53:43.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "useAudioEffects.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useAudioEffects.js",
-              "RelativeDocumentMoniker": "src\\hooks\\useAudioEffects.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useAudioEffects.js",
-              "RelativeToolTip": "src\\hooks\\useAudioEffects.js",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAQwJsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:17:07.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "useStrudelEditor.jsx",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelEditor.jsx",
-              "RelativeDocumentMoniker": "src\\hooks\\useStrudelEditor.jsx",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelEditor.jsx",
-              "RelativeToolTip": "src\\hooks\\useStrudelEditor.jsx",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-17T07:51:44.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControlPanel.jsx",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\ControlPanel.jsx",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\ControlPanel.jsx",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\ControlPanel.jsx",
-              "RelativeToolTip": "src\\components\\strudelDemo\\ControlPanel.jsx",
-              "ViewState": "AgIAADwAAAAAAAAAAAAewE8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-17T07:53:25.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "tunes.js",
               "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\tunes.js",
               "RelativeDocumentMoniker": "src\\utils\\tunes.js",
               "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\tunes.js",
               "RelativeToolTip": "src\\utils\\tunes.js",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAewGMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-18T01:35:55.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T04:00:39.325Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "bpmHelpers.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\bpmHelpers.js",
+              "RelativeDocumentMoniker": "src\\utils\\bpmHelpers.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\bpmHelpers.js",
+              "RelativeToolTip": "src\\utils\\bpmHelpers.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T08:18:02.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "console-monkey-patch.js",
               "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\console-monkey-patch.js",
               "RelativeDocumentMoniker": "src\\utils\\console-monkey-patch.js",
               "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\console-monkey-patch.js",
               "RelativeToolTip": "src\\utils\\console-monkey-patch.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-18T01:36:31.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T01:36:31.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "App.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\App.js",
-              "RelativeDocumentMoniker": "src\\App.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\App.js",
-              "RelativeToolTip": "src\\App.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:56:13.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AnimatedVisual.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\AnimatedVisual.js",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\AnimatedVisual.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\AnimatedVisual.js",
-              "RelativeToolTip": "src\\components\\strudelDemo\\AnimatedVisual.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T11:04:52.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StrudelEditor.jsx",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelEditor.jsx",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\StrudelEditor.jsx",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelEditor.jsx",
-              "RelativeToolTip": "src\\components\\strudelDemo\\StrudelEditor.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ControlPanel.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\ControlPanel.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\ControlPanel.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\ControlPanel.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\ControlPanel.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-11-17T07:53:41.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T07:53:25.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
+              "Title": "StrudelDemo.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelDemo.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\StrudelDemo.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelDemo.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\StrudelDemo.jsx",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAhwL8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-17T07:53:37.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\style.css",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\style.css",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\style.css",
+              "RelativeToolTip": "src\\components\\strudelDemo\\style.css",
+              "ViewState": "AgIAACcAAAAAAAAAAAArwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-17T08:56:03.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AnimatedVisual.css",
               "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\AnimatedVisual.css",
               "RelativeDocumentMoniker": "src\\components\\strudelDemo\\AnimatedVisual.css",
@@ -302,67 +234,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "useBpmProcessor.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useBpmProcessor.js",
-              "RelativeDocumentMoniker": "src\\hooks\\useBpmProcessor.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useBpmProcessor.js",
-              "RelativeToolTip": "src\\hooks\\useBpmProcessor.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:17:27.88Z"
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\public\\README.md",
+              "RelativeDocumentMoniker": "public\\README.md",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\public\\README.md",
+              "RelativeToolTip": "public\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-18T03:47:17.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "bpmHelpers.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\bpmHelpers.js",
-              "RelativeDocumentMoniker": "src\\utils\\bpmHelpers.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\bpmHelpers.js",
-              "RelativeToolTip": "src\\utils\\bpmHelpers.js",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAUAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UserSongs.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\UserSongs.js",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\UserSongs.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\UserSongs.js",
+              "RelativeToolTip": "src\\components\\strudelDemo\\UserSongs.js",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAhwAkBAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:18:02.261Z"
+              "WhenOpened": "2025-11-18T02:06:37.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "settingsManager.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\settingsManager.js",
-              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\settingsManager.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\settingsManager.js",
-              "RelativeToolTip": "src\\components\\strudelDemo\\settingsManager.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "strudelPresets.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\strudelPresets.js",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\strudelPresets.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\strudelPresets.js",
+              "RelativeToolTip": "src\\components\\strudelDemo\\strudelPresets.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:34:21.563Z"
+              "WhenOpened": "2025-11-17T07:53:43.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "audioSetup.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\audioSetup.js",
-              "RelativeDocumentMoniker": "src\\utils\\audioSetup.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\audioSetup.js",
-              "RelativeToolTip": "src\\utils\\audioSetup.js",
-              "ViewState": "AgIAACQAAAAAAAAAAAAiwFMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:17:54.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "useHapDataCapture.js",
-              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useHapDataCapture.js",
-              "RelativeDocumentMoniker": "src\\hooks\\useHapDataCapture.js",
-              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useHapDataCapture.js",
-              "RelativeToolTip": "src\\hooks\\useHapDataCapture.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-17T08:17:18.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 12,
               "Title": "useStrudelInstance.js",
               "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelInstance.js",
               "RelativeDocumentMoniker": "src\\hooks\\useStrudelInstance.js",
@@ -374,19 +284,199 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 13,
+              "Title": "useStrudelEditor.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelEditor.jsx",
+              "RelativeDocumentMoniker": "src\\hooks\\useStrudelEditor.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelEditor.jsx",
+              "RelativeToolTip": "src\\hooks\\useStrudelEditor.jsx",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-17T07:51:44.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "useHapDataCapture.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useHapDataCapture.js",
+              "RelativeDocumentMoniker": "src\\hooks\\useHapDataCapture.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useHapDataCapture.js",
+              "RelativeToolTip": "src\\hooks\\useHapDataCapture.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T08:17:18.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "useBpmProcessor.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useBpmProcessor.js",
+              "RelativeDocumentMoniker": "src\\hooks\\useBpmProcessor.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useBpmProcessor.js",
+              "RelativeToolTip": "src\\hooks\\useBpmProcessor.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T08:17:27.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "useAudioEffects.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useAudioEffects.js",
+              "RelativeDocumentMoniker": "src\\hooks\\useAudioEffects.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useAudioEffects.js",
+              "RelativeToolTip": "src\\hooks\\useAudioEffects.js",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAhwGUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T08:17:07.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "strudelProcessor.js",
               "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\strudelProcessor.js",
               "RelativeDocumentMoniker": "src\\utils\\strudelProcessor.js",
               "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\utils\\strudelProcessor.js",
               "RelativeToolTip": "src\\utils\\strudelProcessor.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-17T08:08:04.88Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PatternLibrary.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\PatternLibrary.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\PatternLibrary.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\PatternLibrary.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\PatternLibrary.jsx",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-18T02:05:16.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PianorollCanvas.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\PianorollCanvas.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\PianorollCanvas.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\PianorollCanvas.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\PianorollCanvas.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-18T03:29:12.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RadioControls.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\RadioControls.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\RadioControls.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\RadioControls.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\RadioControls.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-18T03:29:12.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "settingsManager.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\settingsManager.js",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\settingsManager.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\settingsManager.js",
+              "RelativeToolTip": "src\\components\\strudelDemo\\settingsManager.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T08:34:21.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StrudelEditor.jsx",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelEditor.jsx",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\StrudelEditor.jsx",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\StrudelEditor.jsx",
+              "RelativeToolTip": "src\\components\\strudelDemo\\StrudelEditor.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-17T07:53:41.425Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "TrackControls.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\TrackControls.js",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\TrackControls.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\TrackControls.js",
+              "RelativeToolTip": "src\\components\\strudelDemo\\TrackControls.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T03:26:49.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "main.a9f1ae9c.js.map",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\build\\static\\js\\main.a9f1ae9c.js.map",
+              "RelativeDocumentMoniker": "build\\static\\js\\main.a9f1ae9c.js.map",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\build\\static\\js\\main.a9f1ae9c.js.map",
+              "RelativeToolTip": "build\\static\\js\\main.a9f1ae9c.js.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABCWFoAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-18T03:56:06.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "main.5a92a439.css",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\build\\static\\css\\main.5a92a439.css",
+              "RelativeDocumentMoniker": "build\\static\\css\\main.5a92a439.css",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\build\\static\\css\\main.5a92a439.css",
+              "RelativeToolTip": "build\\static\\css\\main.5a92a439.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAC9DwAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-18T03:55:52.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "D3BarChart.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\D3BarChart.js",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\D3BarChart.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\D3BarChart.js",
+              "RelativeToolTip": "src\\components\\strudelDemo\\D3BarChart.js",
+              "ViewState": "AgIAACoAAAAAAAAAAAAewEUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T01:40:58.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T08:56:13.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AnimatedVisual.js",
+              "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\AnimatedVisual.js",
+              "RelativeDocumentMoniker": "src\\components\\strudelDemo\\AnimatedVisual.js",
+              "ToolTip": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\components\\strudelDemo\\AnimatedVisual.js",
+              "RelativeToolTip": "src\\components\\strudelDemo\\AnimatedVisual.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T11:04:52.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "useStrudelProvider.jsx",
               "DocumentMoniker": "C:\\Users\\Harmon\\Repos\\Veahb001\\strudel_reactor\\src\\hooks\\useStrudelProvider.jsx",
               "RelativeDocumentMoniker": "src\\hooks\\useStrudelProvider.jsx",
